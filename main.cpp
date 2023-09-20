@@ -10,6 +10,7 @@ int buscaSequencial (int vetor[], int n, int valorBuscado, int *encontrado) {
     		return i;
     	}
     }
+return -1;
 }
     
 int buscaBinaria(int vetor[], int n, int valorBuscado, int *encontrado){
