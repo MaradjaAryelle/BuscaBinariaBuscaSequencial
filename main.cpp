@@ -2,11 +2,10 @@
 
 using namespace std;
 
-int buscaSequencial (int vetor[], int n, int valorBuscado, int encontrado) {
+int buscaSequencial (int vetor[], int n, int valorBuscado, int *encontrado) {
     for (int i = 0; i < n; i++){
 		if (vetor[i] == valorBuscado){
-    		encontrado = 1;
-    		cout << encontrado;
+    		*encontrado = 1;
     		cout << "O valor foi encontrado na posicao " << i;
     		return i;
     	}
@@ -27,7 +26,6 @@ int buscaBinaria(int vetor[], int n, int valorBuscado, int *encontrado){
     		fim = meio - 1;
     	} else {
     	    *encontrado = 1;
-    	    cout << *encontrado;
     	    cout << "O valor foi encontrado na posicao " << meio;
     		return meio;
     	}
