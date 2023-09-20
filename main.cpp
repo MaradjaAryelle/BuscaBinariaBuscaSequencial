@@ -6,7 +6,7 @@ int buscaSequencial (int vetor[], int n, int valorBuscado, int encontrado) {
     for (int i = 0; i < n; i++){
 		if (vetor[i] == valorBuscado){
     		encontrado = 1;
-    		cout << oi;
+    		cout << encontrado;
     		cout << "O valor foi encontrado na posicao " << i;
     		return i;
     	}
